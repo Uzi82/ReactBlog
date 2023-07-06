@@ -1,0 +1,16 @@
+@font-face {
+    font-family: T-bold;
+    src: url(/src/fonts/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+    font-family: T-regular;
+    src: url(/src/fonts/TitilliumWeb-Regular.ttf);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #171717;
+    border: none;
+    font-family: T-regular;
+    color: white;
+}
