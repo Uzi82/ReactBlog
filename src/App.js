@@ -10,11 +10,18 @@ export default function App() {
   else {
     render = posts.map(el=>{
       return(
-        <Post key={Math.random()} title={el.title} text={el.text} />
+        <Post key={Math.random()} title={el.title} text={el.text} Delete={false} index={null} />
       )
     })
   }
   return(
-    <ul>{render}</ul>
+    <>
+      <div className="HeadText">
+        <h1 className="HeadText__header">My blog</h1>
+        <div className="HeadText__line"></div>
+        <p className="HeadText__text">Here I will put my posts</p>
+      </div>
+      <ul>{render}</ul>
+    </>
   )
 }

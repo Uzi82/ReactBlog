@@ -1,0 +1,87 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: AdminAppear;
+    animation-duration: 0.5s;
+    &__header {
+        font-family: T-bold;
+        font-size: 4em;
+    }
+    &__input {
+        &-header {
+            margin: 10px;
+            padding-left: 10px;
+            font-family: T-bold, sans-serif;
+            font-size: 3em;
+            border-bottom: 2px solid white;
+        }
+        &-text {
+            margin: 10px;
+            padding-left: 10px;
+            font-family: T-regular, sans-serif;
+            font-size: 2em;
+            border-bottom: 2px solid white;
+            width: 600px !important;
+            height: 200px !important;
+            resize: none;
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        &__addPost {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 60px;
+            margin: 20px;
+            &-btn{
+                background-color: #2e2e2e;
+                width: 200px;
+                height: 50px;
+                border-radius: 5px;
+                font-family: T-bold;
+                font-size: 1.8em;
+                transition-duration: 0.3s;
+                &:hover {
+                    width: 220px;
+                    height: 60px;
+                    font-size: 2em;
+                }
+            }
+        }
+        &__clearPosts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 60px;
+            margin: 20px;
+            &-btn{
+                background-color: #2e2e2e;
+                width: 200px;
+                height: 50px;
+                border-radius: 5px;
+                font-family: T-bold;
+                font-size: 1.8em;
+                transition-duration: 0.3s;
+                &:hover {
+                    width: 220px;
+                    height: 60px;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+@keyframes AdminAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,31 @@
+.HeadText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    animation-name: HeadTextAppear;
+    animation-duration: 0.5s;
+    &__header {
+        font-family: T-bold, sans-serif;
+        font-size: 5em;
+    }
+    &__line {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    &__text {
+        font-family: T-regular, sans-serif;
+        font-size: 2em;
+    }
+}
+@keyframes HeadTextAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

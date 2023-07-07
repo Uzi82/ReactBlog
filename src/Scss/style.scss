@@ -13,4 +13,21 @@
     border: none;
     font-family: T-regular;
     color: white;
+    outline: 0!important;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+#root {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@import '_HeadText';
+@import '_Post';
+@import '_admin';

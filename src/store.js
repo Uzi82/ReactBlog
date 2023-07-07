@@ -1,4 +1,4 @@
-import create from 'zustand';
+import { create } from 'zustand';
 import {persist, createJSONStorage, devtools} from 'zustand/middleware'
 export const usePosts = create(
     devtools(persist(
@@ -9,7 +9,17 @@ export const usePosts = create(
             },
             clearPosts: ()=>{
                 set((state)=> state.list = [])
-            }
+            },
+            deletePost: (index)=>{
+                set((state)=>{
+                    if(state.list !== []) {
+                        let list = state.list
+                        list.splice(index, 1);
+                        return list
+                    }
+                    else return
+                })
+            }   
         }),
         {
             name: 'post-storage',
