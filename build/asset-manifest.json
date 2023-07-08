@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7774251e.css",
+    "main.js": "/static/js/main.a704695b.js",
+    "static/media/TitilliumWeb-Regular.ttf": "/static/media/TitilliumWeb-Regular.e53e0538893d432e0635.ttf",
+    "static/media/TitilliumWeb-Bold.ttf": "/static/media/TitilliumWeb-Bold.a267a8b6b783d7d62039.ttf",
+    "index.html": "/index.html",
+    "main.7774251e.css.map": "/static/css/main.7774251e.css.map",
+    "main.a704695b.js.map": "/static/js/main.a704695b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7774251e.css",
+    "static/js/main.a704695b.js"
+  ]
+}
