@@ -20,10 +20,14 @@
     height: 0px;
     opacity: 0;
 }
+body {
+    width: 100vw;
+    height: 100vh;
+}
 #root {
     display: flex;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -31,3 +35,4 @@
 @import '_HeadText';
 @import '_Post';
 @import '_admin';
+@import '_adaptive';

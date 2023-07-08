@@ -1,0 +1,61 @@
+@media screen and (min-width: 1024px) {
+    
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    ul {
+        width: 100%;
+    }
+    .post{
+        width: 80%;
+    }
+    @keyframes PostAppear {
+        from{
+            width: 0px;
+            opacity: 0;
+        }
+        to {
+            width: 80%;
+            opacity: 1;
+        }
+    }
+    .HeadText {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 767px) {
+    ul {
+        width: 100vw;
+    }
+    #root {
+        width: 100vw;
+    }
+    .post{
+        width: 95%;
+        border-radius: 30px;
+        margin: 2px;
+        box-shadow:  none;
+    }
+    .HeadText {
+        width: 95%;
+        scale: 0.8;
+    }
+    .admin{
+        width: 95%;
+        &__header {
+            font-size: 40px;
+        }
+        &__input{
+            &-header{
+                font-size: 30px;
+                width: 80%;
+            }
+            &-text{
+                font-size: 20px;
+                width: 80% !important;
+            }
+        }
+        &__buttons {
+            scale: 0.7;
+        }
+    }
+}

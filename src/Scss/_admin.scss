@@ -15,6 +15,11 @@
             font-family: T-bold, sans-serif;
             font-size: 3em;
             border-bottom: 2px solid white;
+            opacity: 0.5;
+            transition-duration: 0.3s;
+            &:focus {
+                opacity: 1;
+            }
         }
         &-text {
             margin: 10px;
